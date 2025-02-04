@@ -395,8 +395,10 @@ const OcclusionEditorComponent: React.FC<{
         const occlusionEl = createOcclusionRectEl(
             randomLocation.x,
             randomLocation.y,
-            0.22 * imgEl.width,
-            0.22 * imgEl.height,
+            0.02 * imgEl.width,
+            0.04 * imgEl.height,
+            null,
+            parseInt(cidSelectorRef.current.value) + 1,
         );
         fabricRef.current.add(occlusionEl);
         fabricRef.current.setActiveObject(occlusionEl);
